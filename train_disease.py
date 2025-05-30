@@ -43,11 +43,10 @@ class PalmDiseaseClassifier:
             'potassium_deficiency',
             'manganese_deficiency', 
             'magnesium_deficiency',
-            'fungal_disease_1',  # Replace with actual fungal disease names from your dataset
-            'fungal_disease_2',  # Replace with actual fungal disease names from your dataset
-            'fungal_disease_3',  # Replace with actual fungal disease names from your dataset
-            'fungal_disease_4',  # Replace with actual fungal disease names from your dataset
-            'pest_damage'        # Replace with actual pest disorder name from your dataset
+            'black_scorch',  # Replace with actual fungal disease names from your dataset
+            'fusarium_wilt',  # Replace with actual fungal disease names from your dataset
+            'rachis_blight',  # Replace with actual fungal disease names from your dataset
+            'parlatoria_blanchardi'        # Replace with actual pest disorder name from your dataset
         ]
         
     def advanced_preprocessing(self, image_path):
@@ -168,7 +167,7 @@ class PalmDiseaseClassifier:
                 except Exception as e:
                     print(f"Error renaming {old_path}: {e}")
         
-        return len(changes)
+            return len(changes)
         """
         Validate dataset structure and report any issues
         """
